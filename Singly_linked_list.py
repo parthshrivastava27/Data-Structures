@@ -32,12 +32,15 @@ class Singly_linked_list:
     '''
 
     def display(self):
-        elements = []
-        ptr = self.head
-        while ptr.next != None:
-            ptr = ptr.next
-            elements.append(ptr.data)
-        return elements
+        if self.head == None:
+            return "Underflow"
+        else:
+            elements = []
+            ptr = self.head
+            while ptr.next != None:
+                ptr = ptr.next
+                elements.append(ptr.data)
+            return elements
 
     ##############################################################################
 
